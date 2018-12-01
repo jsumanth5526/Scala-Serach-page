@@ -1,0 +1,298 @@
+<html><head><title>Scala Sample page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+<style>
+
+body {font-size:16px;background-color:#f1f1f1;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    padding-top: .5em;
+    padding-bottom: .5em;
+	height:35px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: #fff;
+	    
+}
+table{
+border-collapse:collapse;
+	border:none;
+	width:100%
+}
+
+td, th {
+   background-color:#fff; border-bottom: .3em solid #f1f1f1;
+   padding-left: 15px;
+}
+
+button {
+margin-left: -9px;
+    padding: 6px;
+	cursor:pointer;
+}
+
+
+</style>
+</head><body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index: 3;width: 190px;font-weight: bold;display: none;overflow: hidden;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"> <i class="fa fa-th" style="padding-right: 10px;font-size: 40px;float: left;color: #6081de;"></i><b style=
+	"float:left;font-size:12px;">SCALA<br>COMPUTERS</b></h3>
+  </div>
+   <div class="w3-bar-block" style="padding-bottom:  70px;padding-left:  7px;"><i class="fa fa-comments" style="float:left;font-size:18px;color: #888284;"></i><b style="float:left;font-size:14px;color: #888284;">sky</b><b style="float:left;font-size:14px;color:#b2b3b7;">metweather.com</b></div>
+  <div class="w3-bar-block" >
+  <ul style="margin: 0px; padding: 9px;">
+  <li> <i class="fa fa-align-right" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">JOBS</b></li>
+  <li> <i class="fa fa-file" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">FILES</b></li>
+  <li> <i class="fa fa-building" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">WORKFLOWS</b></li>
+  <li> <i class="fa fa-align-right" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">PRESETS</b></li>
+  <li> <i class="fa fa-terminal" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">SOFTWARE</b></li>
+  <li> <i class="fa fa-bar-chart" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">USEAGE</b></li>
+  <li> <i class="fa fa-align-right" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">CONNECTIONS</b></li>
+  <li> <i class="fa fa-desktop" style="float:left;margin-right:15px;color: #6081de;"></i> <b style="float:left;font-size:14px;">COMPUTERS</b></li>
+  </ul>
+  </div>
+  
+  
+  <div class="w3-bar-block" style="position:  absolute;bottom:  0px;"><i class="fa fa-comment-o" style="float:left;font-size:18px;color: #6081de;margin-left: 10px;margin-right: 10px;"></i><b style="float:left;font-size:14px;padding-bottom:30px;">contact</b>
+   <b style="float:left;font-size:10px;padding-left:10px;padding-bottom:10px;"><i class="fa fa-copyright" ></i>2018 scala coporation Inc. <br> All rights received </b>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>SCALA Computers</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div style="float:right;position: relative;top:-80px;right: 150px;">Hi Sumanth></div>
+<div style="float:left;position: relative;top:-23px;left: 214;"><a>Files</a></div>
+<div class="w3-main" style="margin-left: 214px;margin-right:10px;width: 83%;height: 120px;background-color:#fff">
+ 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <div>Root/</div>
+  <div style="margin-top:37px;">
+	  <i class="fa fa-plus" style="float:left;margin-right:2px;color: blue;"></i> <b style="float:left;font-size:14px;margin-right:10px;">New Directory</b>
+	  <i class="fa fa-upload" style="float:left;margin-right:2px;color: blue;"></i> <b style="float:left;font-size:14px;">Upload</b>
+  </div>
+  <div style="float:right;">
+    <input type="text" id="searchFile" placeholder="Search.." name="search">
+      <button type="submit" onClick="search()"><i class="fa fa-search"></i></button>
+	</div>
+  </div>
+  
+
+</div>
+
+
+ <div class="w3-container"  style="margin-left: 206px;margin-right:10px;margin-top:12px" id="showData">
+
+ </div>
+  
+
+
+
+<script>
+
+
+function search(){
+   CreateTableFromJSON($("#searchFile").val()); //User Entered Value
+}
+
+
+
+$(document).ready(function(){
+     CreateTableFromJSON(""); //When the page loads 
+    
+});
+
+	//To Dynamically search the entered value by user
+	 $( "#searchFile" ).keyup(function() {
+  		CreateTableFromJSON($("#searchFile").val());
+});
+
+    function CreateTableFromJSON(searchStr) {
+         var myFiles; //JSON Files
+		 var searchResults; //Search Result Array
+		var jqxhr = $.getJSON( "folder/files/files.json", function(data) {
+		  myFiles = data; 
+		  // Fails beacuse No webserver
+		  //Error: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
+		}).fail(function(jqxhr, textStatus, error) {
+		
+			 myFiles = [{
+                "Name": "zips",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+            {
+                "Name": "prerests",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                "Name": "computers",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "rest",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "toys",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "jobs",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "mm-tys",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "cars",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "jobs",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "mm-tys",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "cars",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "jobs",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "mm-tys",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                 "Name": "cars",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            },
+			{
+                "Name": "reports",
+                "Type": "Directory",
+                "Modified Date": "27/06/2018",
+                "Size": "125.60"
+            }]
+		  });
+		searchResults = [];
+		if(searchStr!=''){
+			for(var i = 0; i < myFiles.length; i++)
+			{
+				console.log(i);
+				var name = myFiles[i].Name;
+				console.log(name+ "=="+searchStr);
+				console.log(name.indexOf(searchStr));
+				if(name.indexOf(searchStr) >= 0){
+					searchResults.push(myFiles[i]);
+				}	 
+			}
+		}else{
+			searchResults = myFiles;
+		}
+
+        var col = [];
+        for (var i = 0; i < searchResults.length; i++) {
+            for (var key in searchResults[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        var table = document.createElement("table");
+
+
+        var tr = table.insertRow(-1);                   
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");  
+			if(i==0){
+			 th.innerHTML = '<input type="checkbox" id="myCheck" style="float:left;margin-right:55px;">'+col[i];
+			}else{
+			 th.innerHTML = col[i];
+			}
+           
+			th.setAttribute("align", "left");
+            tr.appendChild(th);
+        }
+
+        for (var i = 0; i < searchResults.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+				if(j==0){
+				 tabCell.innerHTML =  '<input type="checkbox" id="myCheck" style="float:left;"> <i class="fa fa-folder" style="float:left;margin-left:55px; margin-right:2px;color: blue;"></i> ' +searchResults[i][col[j]];
+				}else{
+				 tabCell.innerHTML = searchResults[i][col[j]];
+				}
+               
+            }
+        }
+
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = ""; // Emptying the files div in order to show the search result
+        divContainer.appendChild(table);
+		searchResults = myFiles;
+    }
+</script>
+
+
+
+</body></html>
